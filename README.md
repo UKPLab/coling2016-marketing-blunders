@@ -33,9 +33,17 @@ For license information, see LICENSE.txt file.
 * http://uby.ukp.informatik.tu-darmstadt.de/blunder/
 
 
-## Available data
+## Available data and software
 
-* ...
+* **marketing-blunder**
+** Source code for creating the homograph index, detecting blunders using our four methods, and reproducing our experiments
+** Please contact the authors if you want to use the BrandPitt corpus (Özbal et al., 2012) and our annotations for this corpus
+* **marketing-blunder-online**
+** Wicket-based web application for our online demo
+* **marketing-blunder-data**
+** marketing-blunders-dataset.tsv: our newly created dataset
+** marketing-blunders-dataset.pdf: detailed result table of experiment 1
+** homograph-index.7z: SQL export of our homograph index
 
 
 ## System requirements
@@ -46,16 +54,16 @@ For license information, see LICENSE.txt file.
 * MySQL database (or other SQL database)
 
 
-<!--
 ## System installation
 
 * Install Java, Maven, Tomcat, and MySQL.
 * Download the source code from GitHub.
-* Import the empty schema from `doc/mdswriter_schema.sql` to your database.
-* Update `src/main/webapp/META-INF/context.xml` with your database settings.
-* Update `src/main/webapp/js/st.js`: Set the SERVER_URL variable to the URL the software will be depolyed to.
+* Import the homograph index to a database.
+* Update `resourrces.properties` according to template file.
+* Update `de.tudarmstadt.ukp.experiments.blunder.online.WicketApplication` with your database settings.
+* Add the BrandPitt dataset by Özbal et al. (2012), if needed
 * Build the software using `mvn package`
 * Deploy the war file from `target/` to your application server.
-* Open http://localhost:8080/mdswriter (or accordingly) and try to log in using admin1:admin2.
-* Test if everything works and then import your own data into the schema.
--->
+* Open http://localhost:8080/blunder (or accordingly)
+* Run the evaluation based on the test cases.
+
