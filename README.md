@@ -13,8 +13,8 @@ Please use the following citation:
   year      = {2016},
   address   = {Osaka, Japan},
   publisher = {Association for Computational Linguistics},
-  pages     = {(to appear)},
-  url       = {http://www.aclweb.org/anthology/...}
+  pages     = {2071--2081},
+  url       = {http://www.aclweb.org/anthology/C/C16/C16-1195.pdf}
 }
 ```
 
