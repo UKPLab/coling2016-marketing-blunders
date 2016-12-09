@@ -36,14 +36,14 @@ For license information, see LICENSE.txt file.
 ## Available data and software
 
 * **marketing-blunder**
-** Source code for creating the homograph index, detecting blunders using our four methods, and reproducing our experiments
-** Please contact the authors if you want to use the BrandPitt corpus (Özbal et al., 2012) and our annotations for this corpus
+    * Source code for creating the homograph index, detecting blunders using our four methods, and reproducing our experiments
+    * Please contact the authors if you want to use the BrandPitt corpus (Ã–zbal et al., 2012) and our annotations for this corpus
 * **marketing-blunder-online**
-** Wicket-based web application for our online demo
+    * Wicket-based web application for our online demo
 * **marketing-blunder-data**
-** marketing-blunders-dataset.tsv: our newly created dataset
-** marketing-blunders-dataset.pdf: detailed result table of experiment 1
-** homograph-index.7z: SQL export of our homograph index
+	* marketing-blunders-dataset.tsv: our newly created dataset
+	* marketing-blunders-dataset.pdf: detailed result table of experiment 1
+	* homograph-index.7z: SQL export of our homograph index
 
 
 ## System requirements
@@ -61,7 +61,7 @@ For license information, see LICENSE.txt file.
 * Import the homograph index to a database.
 * Update `resourrces.properties` according to template file.
 * Update `de.tudarmstadt.ukp.experiments.blunder.online.WicketApplication` with your database settings.
-* Add the BrandPitt dataset by Özbal et al. (2012), if needed
+* Add the BrandPitt dataset by Ã–zbal et al. (2012), if needed
 * Build the software using `mvn package`
 * Deploy the war file from `target/` to your application server.
 * Open http://localhost:8080/blunder (or accordingly)
